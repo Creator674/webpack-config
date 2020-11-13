@@ -114,6 +114,11 @@ module.exports = {
     devServer: {
         open: true,
         port: 4200,
+        hot: isDev,
+    },
+    performance: {
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000,
     },
     devtool: isDev ? 'source-map' : '',
     module: {
