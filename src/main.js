@@ -1,5 +1,6 @@
 import {months, MODULES_BECAME_STANDARD_YEAR } from './another';
-import 'particles.js';
+import './particles';
+import './window';
 import'./styles/reset.css';
 import './styles/sets.less';
 import './styles/body.scss';

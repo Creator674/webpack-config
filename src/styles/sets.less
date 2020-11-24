@@ -13,17 +13,55 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     z-index: 10;
     border-radius: 50%;
-    transition: width 1s ease, height 1s ease;
+    transition: transform 1s ease;
     overflow: hidden;
+    border: 3px solid cornflowerblue;
 }
 
 .set:hover {
-    width: 200px;
-    height: 200px;
+    transform: scale(1.75);
+    cursor: pointer;
+    .icon--less {
+        top: 10px;
+    }
+    .icon--sass {
+        left: 5px;
+    }
+    .icon--node {
+        left: 100px;
+    }
 }
+
+.icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transition: top 1s ease, left 1s ease;
+    z-index: 5;
+}
+.icon.icon--less {
+    height: 40px;
+    width: 70px;
+}
+
+.set--1 .icon--less {
+    left: 40px;
+    top: -50px;
+}
+
+.set--1 .icon--sass {
+    left: -100px;
+}
+
+.set--1 .icon--node {
+    left: 200px;
+}
+
 
 .set.set--1 {
     top: 8vh;
@@ -49,4 +87,3 @@
     top: 35vh;
     left: 72vw;
 }
-

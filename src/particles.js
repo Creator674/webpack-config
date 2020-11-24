@@ -1503,7 +1503,6 @@ var pJS = function(tag_id, params){
   };
   
   window.particlesJS.load = function(tag_id, path_config_json, callback){
-  
     /* load json config */
     var xhr = new XMLHttpRequest();
     xhr.open('GET', path_config_json);
@@ -1520,5 +1519,4 @@ var pJS = function(tag_id, params){
       }
     };
     xhr.send();
-  
   };
