@@ -8,31 +8,42 @@
 @color-8: #399cc6;
 @color-9: #1e7eb7;
 @color-10: #0b60a1;
+@set--1-color:rgb(180, 17, 139);
+@set--2-color:rgb(9, 235, 243);
+@set--3-color:rgb(22, 18, 255);
+@set--4-color:rgb(17, 180, 31);
+@set--5-color:rgb(143, 22, 255);
+
+
+.set-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 .set {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    width: 140px;
+    height: 140px;
     z-index: 10;
-    border-radius: 50%;
-    transition: transform 1s ease;
-    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 1s ease, box-shadow 1s cubic-bezier(0, 1.31, 0, 1.95);
     border: 3px solid cornflowerblue;
 }
 
 .set:hover {
-    transform: scale(1.75);
+    transform: scale(1.35);
     cursor: pointer;
-    .icon--less {
-        top: 10px;
-    }
-    .icon--sass {
-        left: 5px;
-    }
-    .icon--node {
-        left: 100px;
-    }
+}
+
+.set:nth-child(2n) {
+    margin-left: 70px;
+}
+
+.set:nth-child(2n + 1) {
+    margin-right: 70px;
 }
 
 .icon {
@@ -44,46 +55,19 @@
     transition: top 1s ease, left 1s ease;
     z-index: 5;
 }
-.icon.icon--less {
-    height: 40px;
-    width: 70px;
+
+.set--1:hover {
+    box-shadow: 0 0 15px @set--1-color, inset 0 0 20px @set--1-color;
 }
-
-.set--1 .icon--less {
-    left: 40px;
-    top: -50px;
+.set--2:hover {
+    box-shadow: 0 0 15px @set--2-color, inset 0 0 20px @set--2-color;
 }
-
-.set--1 .icon--sass {
-    left: -100px;
+.set--3:hover {
+    box-shadow: 0 0 15px @set--3-color, inset 0 0 20px @set--3-color;
 }
-
-.set--1 .icon--node {
-    left: 200px;
+.set--4:hover {
+    box-shadow: 0 0 15px @set--4-color, inset 0 0 20px @set--4-color;
 }
-
-
-.set.set--1 {
-    top: 8vh;
-    left: 46vw;
-}
-
-.set.set--2 {
-    top: 35vh;
-    left: 22vw;
-}
-
-.set.set--3 {
-    top: 72vh;
-    left: 32vw;
-}
-
-.set.set--4 {
-    top: 72vh;
-    left: 62vw;
-}
-
-.set.set--5 {
-    top: 35vh;
-    left: 72vw;
+.set--5:hover {
+    box-shadow: 0 0 15px @set--5-color, inset 0 0 20px @set--5-color;
 }

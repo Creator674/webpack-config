@@ -23,7 +23,6 @@ const optimization = () => {
 
     return config
 }
-
 const getFilenamePattern = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`
 
 const getCssLoaders = (extraLoader) => {
