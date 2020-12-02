@@ -1,69 +1,69 @@
 {
   "particles": {
     "number": {
-      "value": 200,
+      "value": 115,
       "density": {
         "enable": false,
-        "value_area": 946.9771699587272
+        "value_area": 1523.2414578222467
       }
     },
     "color": {
-      "value": "#6f077d"
+      "value": "#1490ff"
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 6,
-        "color": "#2424b1"
+        "width": 5,
+        "color": "#42619b"
       },
       "polygon": {
-        "nb_sides": 6
+        "nb_sides": 5
       },
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/External_link_font_awesome.svg",
-        "width": 10,
-        "height": 10
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
       }
     },
     "opacity": {
-      "value": 0.49705773886831206,
+      "value": 0.4419226793140727,
       "random": true,
       "anim": {
-        "enable": true,
+        "enable": false,
         "speed": 1,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 15,
+      "value": 23.67442924896818,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 56.03332764879281,
-        "size_min": 26.79854800594439,
+        "enable": false,
+        "speed": 40,
+        "size_min": 0,
         "sync": false
       }
     },
     "line_linked": {
       "enable": false,
-      "distance": 100,
-      "color": "#102e50",
-      "opacity": 1,
-      "width": 6.573989449548644
+      "distance": 126.26362266116361,
+      "color": "#930593",
+      "opacity": 0.3235505330692318,
+      "width": 0.9469771699587272
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 7,
       "direction": "top",
-      "random": true,
+      "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 400.8530152163807,
-        "rotateY": 400.8530152163807
+        "rotateX": 600,
+        "rotateY": 1200
       }
     }
   },
@@ -72,19 +72,19 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "bubble"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 59.94005994005994,
         "line_linked": {
-          "opacity": 0.5
+          "opacity": 0.5018983089265044
         }
       },
       "bubble": {
