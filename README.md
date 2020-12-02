@@ -1,1 +1,1 @@
-# webpack-config 1.0
+# webpack basic-config 1.0
